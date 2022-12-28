@@ -448,6 +448,17 @@ nav{
   html{
     font-size: 42%;
   }
+  header{
+    height: 85vh;
+  }
+  .header-text{
+    float: none;
+    margin: 5rem auto;
+  }
+  .header-text + div img{
+    /* float: none; */
+    height: 50rem;
+  }
    /* Blog Section */
   .blog-cards{
     flex-direction: column;
@@ -506,5 +517,24 @@ nav{
   }
   .download-email form input{
     width: 31rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .blog-card{
+    width: 50rem;
+    height: 30rem;
+  }
+  .blog-image img{
+    height: 24rem;
+  }
+  .faq-section{
+    width: 50rem;
+  }
+  .faq-image img{
+    width: 50rem;
+  }
+  .download-section{
+    flex-direction: column;
   }
 }

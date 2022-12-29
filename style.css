@@ -400,8 +400,8 @@ nav{
     font-size: 1.1rem;
   }
   .company-items{
-    font-size: 1.1rem;
-    margin-right: 3.8vw;
+    font-size: 1.4rem;
+    margin-right: 3.5vw;
   }
   /* Card Section */
   .cards{
@@ -432,6 +432,17 @@ nav{
   .blog-author b{
     right: 3vw;
  } 
+ /* Faq_contennt section */
+ .faq-content h2{
+  margin-top: 2rem;
+ }
+ .faq-content h4:nth-child(2){
+  font-size: 1.4rem;
+ }
+ .faq-content h4:nth-child(3){
+  font-size: 1.3rem;
+  margin: 1rem 0;
+ }
   /* Download section */
   .download-email form input{
     width: 36.7rem;
@@ -448,16 +459,27 @@ nav{
   html{
     font-size: 42%;
   }
+  .nav-item{
+    display: none;
+  }
   header{
-    height: 85vh;
+    height: 90vh;
   }
   .header-text{
     float: none;
-    margin: 5rem auto;
+    margin: 4rem;
+  }
+  .header-text h2{
+    font-size: 2.8rem;
+  }
+  .header-text p{
+    font-size: 1.8rem;
   }
   .header-text + div img{
-    /* float: none; */
     height: 50rem;
+  }
+  .companies{
+    margin-top: 8rem;
   }
    /* Blog Section */
   .blog-cards{
@@ -521,6 +543,15 @@ nav{
 }
 
 @media (max-width: 500px) {
+  header{
+    height: 85vh;
+  }
+  .header-text + div img{
+    height: 45rem;
+  }
+  .blog-cards{
+    padding: 1.5rem 3rem;
+  }
   .blog-card{
     width: 50rem;
     height: 30rem;
@@ -536,5 +567,9 @@ nav{
   }
   .download-section{
     flex-direction: column;
+    margin: 8rem 4rem;
+  }
+  .download-content{
+    margin-bottom: 2rem;
   }
 }
